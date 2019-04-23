@@ -1,6 +1,12 @@
 import React from 'react'
+import { AwesomeButton } from 'react-awesome-button'
+
+import { LikeButton } from './components/LikeButton'
+import { DownloadButton } from './components/DownloadButton'
+
 import logo from './logo.svg'
 import './App.css'
+import 'react-awesome-button/dist/styles.css'
 
 const App = () => {
   return (
@@ -16,6 +22,21 @@ const App = () => {
         >
           Learn React
         </a>
+        <LikeButton />
+        <DownloadButton />
+        <div>
+          <AwesomeButton size="small" type="primary">
+            Small
+          </AwesomeButton>
+        </div>
+        <div>
+          <AwesomeButton size="medium" type="primary">
+            Medium
+          </AwesomeButton>
+          <AwesomeButton size="large" type="secondary">
+            Large
+          </AwesomeButton>
+        </div>
       </header>
     </div>
   )
